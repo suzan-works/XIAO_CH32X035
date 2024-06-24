@@ -5,6 +5,8 @@ Arduino IDEからプログラム可能で、USB PDシンクとして動作でき
 Tiny microcontroller board equipped with WCH CH32X035. 
 It can be programmed from the Arduino IDE and functions as a USB PD sink.
 
+[![紹介動画](https://img.youtube.com/vi/rt-zcZJ9Ph8/0.jpg)](https://www.youtube.com/watch?v=rt-zcZJ9Ph8)
+
 ## XIAO_CH32X035
 ![XIAO_CH32X035 image](./images/XIAO_CH32X035_image.png)  
 [回路図](./hardware/XIAO_CH32X035/XIAO_CH32X035_schematic.pdf)
