@@ -9,8 +9,10 @@ It can be programmed from the Arduino IDE and functions as a USB PD sink.
 
 ## XIAO_CH32X035
 ![XIAO_CH32X035 image](./images/XIAO_CH32X035_image.png)  
-[回路図](./hardware/XIAO_CH32X035/XIAO_CH32X035_schematic.pdf)
-
+[回路図PDF](./hardware/XIAO_CH32X035/XIAO_CH32X035_schematic.pdf)  
+[回路図データをブラウザで見る](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsuzan-works%2FXIAO_CH32X035%2Fblob%2Fmain%2Fhardware%2FXIAO_CH32X035%2FXIAO_CH32X035.kicad_sch)  
+[基板CADデータをブラウザで見る](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fsuzan-works%2FXIAO_CH32X035%2Fblob%2Fmain%2Fhardware%2FXIAO_CH32X035%2FXIAO_CH32X035.kicad_pcb)  
+  
 ## WCH-LinkE_adapter
 ![WCH-LinkE_adapter image](./images/WCH-LinkE_adapter_image.png)  
 [回路図](./hardware/WCH-LinkE_adapter/WCH-LinkE_adapter_schematic.pdf)
