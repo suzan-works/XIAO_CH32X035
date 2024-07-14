@@ -4,8 +4,10 @@ Arduino IDEからプログラム可能で、USB PDシンクとして動作でき
 
 Tiny microcontroller board equipped with WCH CH32X035. 
 It can be programmed from the Arduino IDE and functions as a USB PD sink.
-## 紹介動画 Introduction on YouTube
-[![紹介動画](https://img.youtube.com/vi/rt-zcZJ9Ph8/0.jpg)](https://www.youtube.com/watch?v=rt-zcZJ9Ph8)
+## 紹介動画デモ動画 Intro & Demo on YouTube
+[![紹介動画](https://img.youtube.com/vi/rt-zcZJ9Ph8/0.jpg)](https://www.youtube.com/watch?v=rt-zcZJ9Ph8)  
+[![デモ動画](https://img.youtube.com/vi/R6oQsBJsmm8/0.jpg)](https://www.youtube.com/watch?v=R6oQsBJsmm8)  
+デモ動画のソースコードは[こちら](./software/examples/VariableVoltageHeaterControl/VariableVoltageHeaterControl.ino)にあります。
 
 ## Hardware
 ### XIAO_CH32X035
