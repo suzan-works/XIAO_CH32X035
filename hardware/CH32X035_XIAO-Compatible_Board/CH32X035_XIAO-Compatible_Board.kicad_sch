@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "XIAO_CH32X035")
-    (date "2024-06-25")
-    (rev "v1.0")
+    (title "CH32X035 XIAO-Compatible Board")
+    (date "2024-09-02")
+    (rev "v2.0")
     (company "@suzan_works")
   )
 
@@ -1859,7 +1859,7 @@
     (pin "6" (uuid 6923092d-b5c8-497b-8688-3d772df7a63b))
     (pin "7" (uuid 0a1a86b6-45e3-46b8-9305-159feedbf464))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "J2") (unit 1)
         )
@@ -1884,7 +1884,7 @@
     )
     (pin "1" (uuid 4e3f4fc7-e210-4b54-a95e-587eb405a364))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR06") (unit 1)
         )
@@ -1910,7 +1910,7 @@
     (pin "1" (uuid ca55d89b-63e6-4eb8-a46b-91159a1f8e53))
     (pin "2" (uuid c964d67e-8229-4ace-8481-9314001e0272))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "SW1") (unit 1)
         )
@@ -1936,7 +1936,7 @@
     (pin "1" (uuid b8f5775e-d09f-4690-a87b-e26161cf2e3a))
     (pin "2" (uuid 4f1b6926-d268-4cf8-a858-b1612466de4b))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "JP2") (unit 1)
         )
@@ -1961,7 +1961,7 @@
     )
     (pin "1" (uuid 5a3359ad-8928-49ac-a894-8139f67283ce))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR01") (unit 1)
         )
@@ -1986,7 +1986,7 @@
     )
     (pin "1" (uuid 0d08cfb9-6cfa-4696-9447-a9d8fad619d8))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR09") (unit 1)
         )
@@ -2012,7 +2012,7 @@
     (pin "1" (uuid a418e688-160c-4479-b254-2e7796ff587b))
     (pin "2" (uuid b00fa2fe-af51-478c-9990-c21462ff33af))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R3") (unit 1)
         )
@@ -2038,7 +2038,7 @@
     (pin "1" (uuid ca018b34-269d-4e2e-905f-e896c3be655e))
     (pin "2" (uuid 0871ea2a-0c8e-42c8-b898-d855339835a9))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "D1") (unit 1)
         )
@@ -2063,7 +2063,7 @@
     )
     (pin "1" (uuid 399e791e-8fb0-4010-8e4b-7fee2a245250))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR011") (unit 1)
         )
@@ -2088,7 +2088,7 @@
     )
     (pin "1" (uuid 849d966a-0d06-439f-8320-d35af2ad6d02))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR016") (unit 1)
         )
@@ -2129,7 +2129,7 @@
     (pin "B9" (uuid 2b8da528-5691-410a-8faf-fbe7a636090b))
     (pin "S1" (uuid 5260a900-54aa-4456-87c8-d7dde2bb6b40))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "J1") (unit 1)
         )
@@ -2163,7 +2163,7 @@
     (pin "8" (uuid 9aecc6e1-c297-42e6-b1e3-c2ee07786bcc))
     (pin "9" (uuid 3d7defe1-1573-4d1c-b2eb-eb7e97405fd3))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "J4") (unit 1)
         )
@@ -2188,7 +2188,7 @@
     )
     (pin "1" (uuid f9e4122c-46f0-4ee1-87d8-094707da0933))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR03") (unit 1)
         )
@@ -2213,7 +2213,7 @@
     )
     (pin "1" (uuid 2c083f02-8811-4c00-b61b-3bb17da5e598))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR02") (unit 1)
         )
@@ -2239,7 +2239,7 @@
     (pin "1" (uuid fa0d42c5-ab97-4566-8b8e-198faaba5d4a))
     (pin "2" (uuid 9a86874b-032f-4107-bc49-300e12f6ccdc))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R2") (unit 1)
         )
@@ -2265,7 +2265,7 @@
     (pin "1" (uuid 4d5a5fe0-2161-4a2d-9b97-bd7ae06befce))
     (pin "2" (uuid 0d87e5dd-3a6d-4add-8182-ba8462e4bcf4))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "C2") (unit 1)
         )
@@ -2290,7 +2290,7 @@
     )
     (pin "1" (uuid 4aaf771b-e3db-4383-98bb-7a28a367671e))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR08") (unit 1)
         )
@@ -2362,7 +2362,7 @@
     (pin "8" (uuid 812db604-97bd-4b25-a56f-9b2fafb1f3ab))
     (pin "9" (uuid 069afa31-7f6a-4019-ae6b-1810b4c28d69))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "U3") (unit 1)
         )
@@ -2406,7 +2406,7 @@
     (pin "4" (uuid b71a6e91-c30d-48ea-88a6-5e9a4fa8a0ee))
     (pin "5" (uuid be15601f-981f-4168-b396-d61ad49989fd))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "IC1") (unit 1)
         )
@@ -2437,7 +2437,7 @@
     (pin "6" (uuid e0cebac5-c5f9-4b78-b32d-0e68a5ebf9b1))
     (pin "7" (uuid 824574cf-b9d1-4c79-956c-c5e902c334a8))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "J3") (unit 1)
         )
@@ -2463,7 +2463,7 @@
     (pin "1" (uuid b331a73d-0990-40bd-a66e-4a78bb294abb))
     (pin "2" (uuid c5d028b6-f595-421b-8328-324e2f582267))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "C3") (unit 1)
         )
@@ -2488,7 +2488,7 @@
     )
     (pin "1" (uuid 80e6f66f-b174-4c9a-988f-38454b95b1b3))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR05") (unit 1)
         )
@@ -2502,7 +2502,7 @@
     (property "Reference" "F1" (at 187.96 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0603L010YR" (at 187.96 60.96 90)
+    (property "Value" "MF-FSMF010X" (at 187.96 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Fuse:Fuse_0603_1608Metric" (at 193.04 63.5 0)
@@ -2514,7 +2514,7 @@
     (pin "1" (uuid 012c2117-0139-4511-adf5-5d0fa16a379b))
     (pin "2" (uuid b7114400-3dfb-4998-9610-a6ca4effadd7))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "F1") (unit 1)
         )
@@ -2539,7 +2539,7 @@
     )
     (pin "1" (uuid edd419bc-cbba-4451-9c0a-e21138dfd2cf))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR014") (unit 1)
         )
@@ -2565,7 +2565,7 @@
     (pin "1" (uuid e16a399f-91d3-41ae-b5ec-6622aa4f14cf))
     (pin "2" (uuid 1c8560e3-d411-4f06-b8a8-ac457b5fd7d7))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "C1") (unit 1)
         )
@@ -2591,7 +2591,7 @@
     (pin "1" (uuid dc16f70a-c0fa-46f8-b4a7-cce842c01011))
     (pin "2" (uuid 175b3619-dacc-4dd0-a05e-dd9c7cebc34d))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R5") (unit 1)
         )
@@ -2616,7 +2616,7 @@
     )
     (pin "1" (uuid c2617af5-3132-4a35-896c-4966ab1bc244))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR013") (unit 1)
         )
@@ -2642,7 +2642,7 @@
     (pin "1" (uuid acb49736-72ea-4098-99e1-c78a1f883814))
     (pin "2" (uuid 15a3128b-c4ce-482e-945e-fe91d9a9e2c3))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R1") (unit 1)
         )
@@ -2668,7 +2668,7 @@
     (pin "1" (uuid f26a492e-dfd1-42c9-bea5-787551813d41))
     (pin "2" (uuid 2329300c-6bcb-4321-87f5-9549b63131bf))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "JP1") (unit 1)
         )
@@ -2694,7 +2694,7 @@
     (pin "1" (uuid 5eb42d20-7cf0-4fd8-821b-bb0b56af6347))
     (pin "2" (uuid 89af9ccd-35b0-48cf-b6db-ed82b5a1ed4f))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R6") (unit 1)
         )
@@ -2719,7 +2719,7 @@
     )
     (pin "1" (uuid 40188f65-1fea-49cf-b5c6-2aeebbdbc5fc))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR018") (unit 1)
         )
@@ -2744,7 +2744,7 @@
     )
     (pin "1" (uuid 612990d0-fc58-4f9e-a785-f8ae172033ce))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR015") (unit 1)
         )
@@ -2769,7 +2769,7 @@
     )
     (pin "1" (uuid 9c5bc8b2-350c-40a8-b667-e4068088a138))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR04") (unit 1)
         )
@@ -2795,7 +2795,7 @@
     (pin "1" (uuid ffe08c15-9ace-48ed-9757-efe84704df7f))
     (pin "2" (uuid 618f79ef-3b41-45d9-b8e9-dc56eb86b546))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "R4") (unit 1)
         )
@@ -2820,7 +2820,7 @@
     )
     (pin "1" (uuid 0e0d46df-a072-45ef-a251-111f1fd91d3e))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR012") (unit 1)
         )
@@ -2845,7 +2845,7 @@
     )
     (pin "1" (uuid 86156a13-52ac-461f-93a2-d6c989a50b09))
     (instances
-      (project "XIAO_CH32X035_4"
+      (project "XIAO_CH32X035_7"
         (path "/72353386-d753-4184-a8ed-760114c0bea3"
           (reference "#PWR017") (unit 1)
         )

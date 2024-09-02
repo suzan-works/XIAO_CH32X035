@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "VBUS_SWITCH_BFF")
-    (date "2024-06-25")
-    (rev "v1.0")
+    (title "VBUS Switch Addon Board")
+    (date "2024-09-02")
+    (rev "v2.0")
     (company "@suzan_works")
   )
 
@@ -306,6 +306,43 @@
         )
       )
     )
+    (symbol "Connector_Generic:Conn_01x01" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x01" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x01_1_1"
+        (rectangle (start -1.27 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 1.27) (end 1.27 -1.27)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Generic:Conn_01x07" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 10.16 0)
         (effects (font (size 1.27 1.27)))
@@ -442,6 +479,89 @@
         )
       )
     )
+    (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "LED" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "LED diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Light emitting diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LED_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "LED_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 0.762 0.508 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -477,6 +597,73 @@
         )
         (pin passive line (at 0 -2.54 90) (length 0.762)
           (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Jumper:SolderJumper_2_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (at 0 2.032 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SolderJumper_2_Open" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "solder jumper SPST" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Solder Jumper, 2-pole, open" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "SolderJumper*Open*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SolderJumper_2_Open_0_1"
+        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -0.254 1.016)
+            (xy -0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.254 1.016)
+            (xy 0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "SolderJumper_2_Open_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
       )
@@ -855,6 +1042,9 @@
   (junction (at 127 88.9) (diameter 0) (color 0 0 0 0)
     (uuid 2c875f9e-486c-4ea7-ae4f-1a8e1c864a26)
   )
+  (junction (at 58.42 119.38) (diameter 0) (color 0 0 0 0)
+    (uuid 4d43b940-2acc-45a1-bdf4-25540ac2f401)
+  )
   (junction (at 113.03 129.54) (diameter 0) (color 0 0 0 0)
     (uuid 794ebeed-5778-42f6-a441-5ec54b7d40f3)
   )
@@ -867,8 +1057,14 @@
   (junction (at 134.62 146.05) (diameter 0) (color 0 0 0 0)
     (uuid 851e438a-fdad-4cc5-9264-19bea60c0c71)
   )
+  (junction (at 157.48 88.9) (diameter 0) (color 0 0 0 0)
+    (uuid 8eaf7ae2-1db3-403e-a0e7-69c3f6536653)
+  )
   (junction (at 85.09 97.79) (diameter 0) (color 0 0 0 0)
     (uuid 9127bb66-416a-4c3e-a3e8-e0dd8e9a7790)
+  )
+  (junction (at 184.15 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 9865ef4e-ff67-4ec8-9b2e-725bc2d60984)
   )
   (junction (at 80.01 95.25) (diameter 0) (color 0 0 0 0)
     (uuid a51e39fc-ebe4-4442-996b-ff23e884f86b)
@@ -876,11 +1072,17 @@
   (junction (at 186.69 39.37) (diameter 0) (color 0 0 0 0)
     (uuid aaf216a9-e62d-4bff-9202-15c11222089e)
   )
+  (junction (at 152.4 105.41) (diameter 0) (color 0 0 0 0)
+    (uuid b8ca0ecc-1e61-4449-a503-6f191ec936a8)
+  )
   (junction (at 132.08 146.05) (diameter 0) (color 0 0 0 0)
     (uuid c731766e-0061-4733-b832-fab104233c4f)
   )
   (junction (at 123.19 39.37) (diameter 0) (color 0 0 0 0)
     (uuid d684fd76-d624-43eb-8b3d-192fed6038d1)
+  )
+  (junction (at 142.24 137.16) (diameter 0) (color 0 0 0 0)
+    (uuid e6ad788d-3aec-4b67-b3c1-9e1a226b7be3)
   )
   (junction (at 85.09 113.03) (diameter 0) (color 0 0 0 0)
     (uuid f05df4ac-739b-48cf-a974-3a2c8b60410f)
@@ -895,6 +1097,10 @@
   (no_connect (at 81.28 46.99) (uuid a1576875-b5a8-4748-a605-efa21f6d30bd))
   (no_connect (at 81.28 54.61) (uuid c4ef0ab4-f265-425c-a1fa-fee4839ebcbc))
 
+  (wire (pts (xy 58.42 119.38) (xy 58.42 121.92))
+    (stroke (width 0) (type default))
+    (uuid 072cdfc6-eaa8-429b-bd4e-e54bb1adf124)
+  )
   (wire (pts (xy 46.99 95.25) (xy 46.99 97.79))
     (stroke (width 0) (type default))
     (uuid 07bdfd93-eba9-4e89-a8ab-8c4e5f31c7d3)
@@ -902,6 +1108,10 @@
   (wire (pts (xy 113.03 127) (xy 113.03 129.54))
     (stroke (width 0) (type default))
     (uuid 0a41070d-ba3a-4302-a325-4ba3e2acf199)
+  )
+  (wire (pts (xy 142.24 137.16) (xy 142.24 138.43))
+    (stroke (width 0) (type default))
+    (uuid 0ad56b50-d8ee-46e6-821b-b46c776241ea)
   )
   (wire (pts (xy 85.09 113.03) (xy 85.09 116.84))
     (stroke (width 0) (type default))
@@ -911,7 +1121,7 @@
     (stroke (width 0) (type default))
     (uuid 0ca4e70e-1e26-4103-9d2b-6a41aa545b33)
   )
-  (wire (pts (xy 45.72 102.87) (xy 99.06 102.87))
+  (wire (pts (xy 46.99 102.87) (xy 99.06 102.87))
     (stroke (width 0) (type default))
     (uuid 0de0c5bd-5b69-4a01-a835-62b4de1fb560)
   )
@@ -919,13 +1129,17 @@
     (stroke (width 0) (type default))
     (uuid 151b5ea1-3ab2-465c-84d5-22d79ce3cae1)
   )
+  (wire (pts (xy 142.24 129.54) (xy 142.24 130.81))
+    (stroke (width 0) (type default))
+    (uuid 1a01ac8c-0b32-4e9b-8db4-ee8c6cd9a6ed)
+  )
   (wire (pts (xy 132.08 143.51) (xy 132.08 146.05))
     (stroke (width 0) (type default))
     (uuid 1c87a460-9480-4aef-912e-b975645d086e)
   )
-  (wire (pts (xy 127 134.62) (xy 129.54 134.62))
+  (wire (pts (xy 142.24 137.16) (xy 152.4 137.16))
     (stroke (width 0) (type default))
-    (uuid 1e2e7021-f844-4d00-90a1-cb09860e76eb)
+    (uuid 227fdf8a-8771-4333-9ddf-54b56309c330)
   )
   (wire (pts (xy 76.2 92.71) (xy 85.09 92.71))
     (stroke (width 0) (type default))
@@ -939,11 +1153,15 @@
     (stroke (width 0) (type default))
     (uuid 272b29a4-4443-4027-9dfc-ba9d7f98da35)
   )
-  (wire (pts (xy 45.72 97.79) (xy 45.72 102.87))
+  (wire (pts (xy 46.99 97.79) (xy 46.99 102.87))
     (stroke (width 0) (type default))
     (uuid 27b444d1-a04f-4c84-9b3e-370e03729b04)
   )
-  (wire (pts (xy 179.07 39.37) (xy 186.69 39.37))
+  (wire (pts (xy 69.85 119.38) (xy 69.85 130.81))
+    (stroke (width 0) (type default))
+    (uuid 2cfd293f-7f2c-4c81-a269-ad3fad1312ba)
+  )
+  (wire (pts (xy 179.07 39.37) (xy 184.15 39.37))
     (stroke (width 0) (type default))
     (uuid 2e3413ff-3892-497b-88dd-10d25f203292)
   )
@@ -959,7 +1177,11 @@
     (stroke (width 0) (type default))
     (uuid 34919e19-d035-438f-8b52-03e0454baff6)
   )
-  (wire (pts (xy 129.54 134.62) (xy 129.54 125.73))
+  (wire (pts (xy 161.29 99.06) (xy 157.48 99.06))
+    (stroke (width 0) (type default))
+    (uuid 34c36075-5681-45f0-ab1b-64391604410b)
+  )
+  (wire (pts (xy 129.54 129.54) (xy 129.54 125.73))
     (stroke (width 0) (type default))
     (uuid 352620e7-c1d0-48ca-8d63-6fabf3f27556)
   )
@@ -971,9 +1193,17 @@
     (stroke (width 0) (type default))
     (uuid 38bdf139-3481-4ec7-b007-aae61f1e1135)
   )
+  (wire (pts (xy 157.48 99.06) (xy 157.48 88.9))
+    (stroke (width 0) (type default))
+    (uuid 3a2c35bc-598a-48cf-a0fa-d65db5dac7b1)
+  )
   (wire (pts (xy 76.2 97.79) (xy 85.09 97.79))
     (stroke (width 0) (type default))
     (uuid 3c669915-f5af-456e-ba5d-d54fad9c78ec)
+  )
+  (wire (pts (xy 123.19 26.67) (xy 173.99 26.67))
+    (stroke (width 0) (type default))
+    (uuid 3e6651b5-7a2f-4bd6-bc63-5d72f3d3ece7)
   )
   (wire (pts (xy 76.2 90.17) (xy 80.01 90.17))
     (stroke (width 0) (type default))
@@ -982,6 +1212,10 @@
   (wire (pts (xy 133.35 41.91) (xy 129.54 41.91))
     (stroke (width 0) (type default))
     (uuid 40ca43ec-b501-4402-96ce-97ef33be0e65)
+  )
+  (wire (pts (xy 157.48 88.9) (xy 161.29 88.9))
+    (stroke (width 0) (type default))
+    (uuid 418ab4d4-f4d5-4dad-959b-af741385f2fc)
   )
   (wire (pts (xy 85.09 135.89) (xy 85.09 139.7))
     (stroke (width 0) (type default))
@@ -1006,6 +1240,10 @@
   (wire (pts (xy 87.63 36.83) (xy 87.63 39.37))
     (stroke (width 0) (type default))
     (uuid 5750e133-b6f9-4493-99c8-86187662f378)
+  )
+  (wire (pts (xy 142.24 135.89) (xy 142.24 137.16))
+    (stroke (width 0) (type default))
+    (uuid 594eb1c2-f460-4b40-a713-bccb8c6d5ed8)
   )
   (wire (pts (xy 39.37 90.17) (xy 46.99 90.17))
     (stroke (width 0) (type default))
@@ -1035,7 +1273,11 @@
     (stroke (width 0) (type default))
     (uuid 8120158b-4dde-4c2c-9e8a-f8282e4e1045)
   )
-  (wire (pts (xy 158.75 91.44) (xy 158.75 96.52))
+  (wire (pts (xy 58.42 127) (xy 58.42 129.54))
+    (stroke (width 0) (type default))
+    (uuid 82c3b66f-57f9-4203-91c2-cc2c6019a51d)
+  )
+  (wire (pts (xy 152.4 91.44) (xy 152.4 105.41))
     (stroke (width 0) (type default))
     (uuid 85b481aa-c36e-470b-85e5-a750d7a8a136)
   )
@@ -1059,6 +1301,14 @@
     (stroke (width 0) (type default))
     (uuid 93ab01ce-4661-499e-ade0-582a0db32011)
   )
+  (wire (pts (xy 142.24 143.51) (xy 142.24 149.86))
+    (stroke (width 0) (type default))
+    (uuid 93fb18c2-9b9a-4ce6-9228-3212f4b2db0b)
+  )
+  (wire (pts (xy 58.42 137.16) (xy 58.42 139.7))
+    (stroke (width 0) (type default))
+    (uuid 94a17f7f-f048-4b64-97ed-ee4a2bde7373)
+  )
   (wire (pts (xy 116.84 36.83) (xy 116.84 39.37))
     (stroke (width 0) (type default))
     (uuid 9650189a-2068-4224-922f-efa50a69b893)
@@ -1066,6 +1316,10 @@
   (wire (pts (xy 134.62 88.9) (xy 134.62 92.71))
     (stroke (width 0) (type default))
     (uuid 991809a9-cff9-4d92-b98b-ebeec327d7e4)
+  )
+  (wire (pts (xy 69.85 130.81) (xy 76.2 130.81))
+    (stroke (width 0) (type default))
+    (uuid a2a2863f-4ea1-4c2f-974e-4cd3541545fb)
   )
   (wire (pts (xy 50.8 95.25) (xy 46.99 95.25))
     (stroke (width 0) (type default))
@@ -1075,11 +1329,19 @@
     (stroke (width 0) (type default))
     (uuid a71507f9-c28e-4e81-831f-4f5d601f59cf)
   )
+  (wire (pts (xy 58.42 119.38) (xy 49.53 119.38))
+    (stroke (width 0) (type default))
+    (uuid aaed113f-26ed-4d46-b204-b5f75327c858)
+  )
+  (wire (pts (xy 152.4 105.41) (xy 161.29 105.41))
+    (stroke (width 0) (type default))
+    (uuid afed8184-53e8-4c20-93c5-f7f50ec2eb86)
+  )
   (wire (pts (xy 85.09 113.03) (xy 85.09 110.49))
     (stroke (width 0) (type default))
     (uuid b1ae2364-921b-4569-aafa-a5dd78c788a8)
   )
-  (wire (pts (xy 134.62 88.9) (xy 161.29 88.9))
+  (wire (pts (xy 134.62 88.9) (xy 157.48 88.9))
     (stroke (width 0) (type default))
     (uuid b3aabba5-ddea-4fc9-84de-dd1278fa8b83)
   )
@@ -1107,6 +1369,10 @@
     (stroke (width 0) (type default))
     (uuid bde80457-af6b-4618-85b8-2122eee2a957)
   )
+  (wire (pts (xy 123.19 39.37) (xy 123.19 26.67))
+    (stroke (width 0) (type default))
+    (uuid c0da0d6c-1a3e-42ca-93b3-17ee4bf2ce99)
+  )
   (wire (pts (xy 81.28 41.91) (xy 87.63 41.91))
     (stroke (width 0) (type default))
     (uuid c5adee8e-e185-42dc-bafb-4e37e0f74900)
@@ -1114,6 +1380,10 @@
   (wire (pts (xy 99.06 102.87) (xy 99.06 88.9))
     (stroke (width 0) (type default))
     (uuid c814da11-f62b-4f25-9ca1-4fbc9fd27a80)
+  )
+  (wire (pts (xy 181.61 26.67) (xy 184.15 26.67))
+    (stroke (width 0) (type default))
+    (uuid c8dd3bd9-f514-4c21-b1d0-65d444eca689)
   )
   (wire (pts (xy 133.35 44.45) (xy 123.19 44.45))
     (stroke (width 0) (type default))
@@ -1127,13 +1397,21 @@
     (stroke (width 0) (type default))
     (uuid d50468b6-7021-4e4c-ad7f-d6cb96d6c209)
   )
-  (wire (pts (xy 76.2 130.81) (xy 72.39 130.81))
+  (wire (pts (xy 184.15 39.37) (xy 186.69 39.37))
+    (stroke (width 0) (type default))
+    (uuid d75b151d-0d2e-48a1-90ce-33b7d1e38a2a)
+  )
+  (wire (pts (xy 69.85 119.38) (xy 58.42 119.38))
     (stroke (width 0) (type default))
     (uuid d9431379-59f3-42fa-a94a-606c138ec075)
   )
   (wire (pts (xy 214.63 92.71) (xy 214.63 96.52))
     (stroke (width 0) (type default))
     (uuid db1a41c0-dece-41ef-bc00-dccb4e3252ba)
+  )
+  (wire (pts (xy 152.4 105.41) (xy 152.4 113.03))
+    (stroke (width 0) (type default))
+    (uuid dc550025-121e-4a13-83f6-40e1fb17e443)
   )
   (wire (pts (xy 116.84 53.34) (xy 129.54 53.34))
     (stroke (width 0) (type default))
@@ -1151,6 +1429,10 @@
     (stroke (width 0) (type default))
     (uuid e180dbe6-0747-45a1-90e5-1b847b5abd49)
   )
+  (wire (pts (xy 142.24 129.54) (xy 129.54 129.54))
+    (stroke (width 0) (type default))
+    (uuid e4ab37e8-8c05-49a0-b1b7-0bfb0fc2c8dc)
+  )
   (wire (pts (xy 87.63 39.37) (xy 81.28 39.37))
     (stroke (width 0) (type default))
     (uuid e5d0e31d-753a-4bcc-8efb-db505efa8029)
@@ -1167,15 +1449,11 @@
     (stroke (width 0) (type default))
     (uuid e9ea8379-145f-405a-b845-e305fc44d6d4)
   )
-  (wire (pts (xy 45.72 97.79) (xy 46.99 97.79))
-    (stroke (width 0) (type default))
-    (uuid ebedb888-e65f-4951-ba97-94a83ee8cc16)
-  )
   (wire (pts (xy 80.01 90.17) (xy 80.01 95.25))
     (stroke (width 0) (type default))
     (uuid ec9cf383-d303-44f7-b8c1-4e48601b4c98)
   )
-  (wire (pts (xy 161.29 91.44) (xy 158.75 91.44))
+  (wire (pts (xy 161.29 91.44) (xy 152.4 91.44))
     (stroke (width 0) (type default))
     (uuid f5b5ba7d-4a4e-4d4a-8dc4-a301b0a7675b)
   )
@@ -1183,11 +1461,19 @@
     (stroke (width 0) (type default))
     (uuid f6681209-9f8a-4b4b-aa85-24c6399fc904)
   )
+  (wire (pts (xy 184.15 26.67) (xy 184.15 39.37))
+    (stroke (width 0) (type default))
+    (uuid fac923fc-1a73-49a3-9960-c185b4c7cbe1)
+  )
   (wire (pts (xy 76.2 95.25) (xy 80.01 95.25))
     (stroke (width 0) (type default))
     (uuid fe0ea5b9-5ec2-4e24-8dd7-ef1fe6a6e22c)
   )
 
+  (text "Output Indicator LED" (at 41.91 113.03 0)
+    (effects (font (size 2 2)) (justify left bottom))
+    (uuid 2dff0d88-f68c-4889-a8cb-a1be7068a3fe)
+  )
   (text "Switch" (at 215.9 78.74 0)
     (effects (font (size 2 2)) (justify left bottom))
     (uuid 5a6d7380-8e8d-47be-a229-cbcfc0a52c21)
@@ -1208,8 +1494,7 @@
     (effects (font (size 2 2)) (justify left bottom))
     (uuid bf2f2c81-06a2-4699-8d77-bc819d5706c4)
   )
-  (text "・出力インジケータLEDを追加予定です。\n・電流センサーICの出力に抵抗を追加予定です。分圧してからPA1に入力します。\n・5Vレギュレータ用にVBUS5V時の切替スイッチを追加予定です。\n\n- Add output LED.\n- Add resistors to current sensor output for division into PA1.\n- Add switch for 5V regulator."
-    (at 50.8 179.07 0)
+  (text "Short JP1 only when VBUS = 5V." (at 198.12 27.94 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid eedc77dc-d5a1-4dee-9fd0-7097aad18388)
   )
@@ -1222,7 +1507,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 3edd85d8-964a-4d2d-a150-244cb5b46123)
   )
-  (label "PA0" (at 72.39 130.81 180) (fields_autoplaced)
+  (label "PA0" (at 49.53 119.38 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 526e947a-479d-4f22-99b6-8e389bd9011d)
   )
@@ -1242,9 +1527,35 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 9d8e22c8-7a92-4a7a-8aa3-db79cfce8ec2)
   )
-  (label "PA1" (at 127 134.62 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+  (label "PA1" (at 152.4 137.16 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid afae24d7-d24d-4ce2-9cdd-cbf40ca91f72)
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 142.24 133.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0b4d876d-b17f-4c53-b2e1-6eee50353201)
+    (property "Reference" "R4" (at 144.78 132.08 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 144.78 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 142.24 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 57895d41-f89a-4036-99e7-559518eac985))
+    (pin "2" (uuid 821ce658-f1c0-4593-970c-4e6652f932f4))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "R4") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "power:+5V") (at 113.03 127 0) (unit 1)
@@ -1264,7 +1575,7 @@
     )
     (pin "1" (uuid 272182f4-839f-4657-8cbd-40cb9863974b))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR010") (unit 1)
         )
@@ -1290,9 +1601,34 @@
     (pin "1" (uuid 42888880-b56f-4323-ae58-25014b8c28ca))
     (pin "2" (uuid 5e1bf9cb-9c73-4c90-a0ef-87caa8ba7e8d))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "C2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 58.42 139.7 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 197cc680-09a2-4905-9ad4-4fd5c794904e)
+    (property "Reference" "#PWR013" (at 58.42 146.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 58.42 144.78 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 58.42 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 58.42 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4db9cd18-78b3-4ac7-8415-e4beeda22c1e))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -1319,7 +1655,7 @@
     (pin "4" (uuid c1344ab3-0a89-435a-be91-a280f96bcc57))
     (pin "5" (uuid 1be65c76-be4e-459b-9142-d3d836cd42af))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "IC1") (unit 1)
         )
@@ -1366,7 +1702,7 @@
     (pin "7" (uuid 97bf961c-1571-4424-be6b-e12d45236eef))
     (pin "8" (uuid e7cfc21d-8ca8-479c-9ae7-e6d9057d6fa8))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "IC2") (unit 1)
         )
@@ -1380,7 +1716,7 @@
     (property "Reference" "J3" (at 168.91 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "2.54mm Screw Terminal" (at 168.91 91.44 0)
+    (property "Value" "Terminal Block" (at 168.91 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" (at 166.37 88.9 0)
@@ -1392,9 +1728,35 @@
     (pin "1" (uuid 55575fca-ad95-4278-9d81-d9246ba1ca78))
     (pin "2" (uuid 55541143-b4ee-4f3a-98bf-6a98a67bae57))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "J3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 177.8 26.67 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 362845aa-2e3d-4116-bdbb-511dbcb020f8)
+    (property "Reference" "JP1" (at 177.8 22.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SolderJumper_2_Open" (at 177.8 22.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "0_My_Library:SolderJumper-2_P1.3mm_Open_Pad0.8x1.2mm" (at 177.8 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 177.8 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a2d7999a-97d8-4b99-85b3-edd4410796d6))
+    (pin "2" (uuid b7e0ed21-6de2-4075-a586-8dcea5350b3f))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -1423,7 +1785,7 @@
     (pin "6" (uuid 6b90a3ff-bb2a-4045-a756-730511911482))
     (pin "7" (uuid 7b7cee57-07d2-454b-9fa7-cfa538418bf7))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "J2") (unit 1)
         )
@@ -1448,7 +1810,7 @@
     )
     (pin "1" (uuid 3da563c6-69dc-482b-9b65-0839197968eb))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR05") (unit 1)
         )
@@ -1474,9 +1836,35 @@
     (pin "1" (uuid 957a300b-a401-49d8-9275-4993d663627a))
     (pin "2" (uuid f46c9bc0-0537-4c5b-9998-194a8bbff789))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "R1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:LED") (at 58.42 133.35 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4652e54d-2d0b-4fdb-8883-56236f326ec7)
+    (property "Reference" "D1" (at 62.23 133.6675 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "Red LED" (at 62.23 136.2075 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "LED_SMD:LED_0402_1005Metric" (at 58.42 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 58.42 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 07a512dc-cf59-4857-9192-0d194b018640))
+    (pin "2" (uuid 70632ff9-12be-4d63-9e71-855f18355076))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -1499,7 +1887,7 @@
     )
     (pin "1" (uuid 1afd5939-8482-4be2-b42f-dee4ab4600e5))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR03") (unit 1)
         )
@@ -1524,7 +1912,7 @@
     )
     (pin "1" (uuid 933b6eda-be53-4d01-85a3-00779fbfd10f))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR09") (unit 1)
         )
@@ -1549,7 +1937,7 @@
     )
     (pin "1" (uuid 83298cd9-662c-49a3-9105-308bfc9f281d))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR02") (unit 1)
         )
@@ -1574,7 +1962,7 @@
     )
     (pin "1" (uuid 867d3e98-0285-43f8-a9d9-c165eaf09880))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR01") (unit 1)
         )
@@ -1582,26 +1970,51 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 158.75 96.52 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 152.4 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74d3bb12-9657-4c6c-97fc-329cb335afd8)
-    (property "Reference" "#PWR07" (at 158.75 102.87 0)
+    (property "Reference" "#PWR07" (at 152.4 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 158.75 101.6 0)
+    (property "Value" "GND" (at 152.4 118.11 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 158.75 96.52 0)
+    (property "Footprint" "" (at 152.4 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 158.75 96.52 0)
+    (property "Datasheet" "" (at 152.4 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d8757a76-f1fc-4133-bf27-fedd8b8b9fd1))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR07") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 166.37 99.06 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7adb94c2-e5fb-468f-a006-e4cb3363e846)
+    (property "Reference" "J4" (at 168.91 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1.3mm Through Hole" (at 168.91 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm" (at 166.37 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 166.37 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8dec741c-9af7-4b59-8c1c-f680e7e802df))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -1625,7 +2038,7 @@
     (pin "1" (uuid f9e5deb3-fd50-44c8-aaa9-60ab31ab1fe8))
     (pin "2" (uuid 61d62788-8188-4151-a82b-05ff29ceeb7c))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "C4") (unit 1)
         )
@@ -1652,9 +2065,35 @@
     (pin "2" (uuid 4a96047e-2e75-4d96-9e7f-bf17a0170c9f))
     (pin "3" (uuid db75baa4-72c0-472a-953f-a91ac104e750))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "Q1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 142.24 140.97 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8ce9bb48-3d05-4ea6-935c-623880290f2e)
+    (property "Reference" "R5" (at 144.78 139.7 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 144.78 142.24 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 142.24 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a90f22de-e815-44f4-bc62-1736bcb97977))
+    (pin "2" (uuid f6b3bb42-82bc-4faf-b857-00f4dc426fc2))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -1677,7 +2116,7 @@
     )
     (pin "1" (uuid 0492d681-f7e3-485a-975f-6960e5987ff4))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR08") (unit 1)
         )
@@ -1702,7 +2141,7 @@
     )
     (pin "1" (uuid f9694aca-bd46-43cf-90a4-0d97cc8a0c25))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR06") (unit 1)
         )
@@ -1727,9 +2166,34 @@
     )
     (pin "1" (uuid 2ff41d0f-9d06-42ab-b28d-cc82df2a2d12))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR011") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 166.37 105.41 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a43fa359-d92c-4dd6-85d4-10b11de82782)
+    (property "Reference" "J5" (at 168.91 104.14 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1.3mm Through Hole" (at 168.91 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm" (at 166.37 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 166.37 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 273bee9a-4b4e-4e87-9f69-0ec24a4afc3c))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -1753,7 +2217,7 @@
     (pin "1" (uuid f2c1eefa-056a-47fe-b458-ad60059a5759))
     (pin "2" (uuid 57558b9c-fa0e-4a95-85f3-6ad5fccdf9e8))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "C1") (unit 1)
         )
@@ -1778,7 +2242,7 @@
     )
     (pin "1" (uuid bb977e2a-b72d-4c54-a93f-1cbf50a25496))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR012") (unit 1)
         )
@@ -1804,9 +2268,35 @@
     (pin "1" (uuid 14250e0d-ea01-47bd-82e6-07344a3c1e5d))
     (pin "2" (uuid 219e123e-91fa-445b-a80c-48c3b4858de6))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "R2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 58.42 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid be787c12-039d-444c-854a-0367eb2d4a14)
+    (property "Reference" "R3" (at 60.96 123.19 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "220" (at 60.96 125.73 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 58.42 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 58.42 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f9b402f5-eb4c-46f2-90eb-3039f857fc51))
+    (pin "2" (uuid 74d30c16-e421-4ed3-8897-808c85e78ada))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -1830,7 +2320,7 @@
     (pin "1" (uuid 6a44ebdf-3fc6-4a4e-9f36-9d5bfd90076c))
     (pin "2" (uuid f2a04b0e-6dbc-4c24-94bb-98f63eaf6d99))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "SW2") (unit 1)
         )
@@ -1856,7 +2346,7 @@
     (pin "1" (uuid abededdb-e6ff-4d52-beee-bacc2d2c4c1d))
     (pin "2" (uuid 199506bd-307b-4018-ba6e-cd0e3b9ca727))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "C3") (unit 1)
         )
@@ -1887,9 +2377,34 @@
     (pin "6" (uuid 9d7aefa9-e368-4b22-8845-72c56318c8d9))
     (pin "7" (uuid c60485b3-2ac8-4298-89ff-cb6168262a6c))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 142.24 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e6efc084-abbd-47e1-ad3d-f1d25ea31c8f)
+    (property "Reference" "#PWR014" (at 142.24 156.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 142.24 154.94 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 48a9fdb6-56f2-4825-a4b2-cd2c202d80e4))
+    (instances
+      (project "Vbus_Switch_BFF_4"
+        (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -1913,7 +2428,7 @@
     (pin "1" (uuid 3d992c58-9002-4a5a-a678-8d187d52d9a6))
     (pin "2" (uuid 9612db84-4322-491a-af23-a40b171bbffe))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "SW1") (unit 1)
         )
@@ -1960,7 +2475,7 @@
     (pin "7" (uuid 95e589d1-af39-4b3f-b223-addf11df392c))
     (pin "8" (uuid ba2b093d-6cac-4489-846d-8201673c1f84))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "IC3") (unit 1)
         )
@@ -1985,7 +2500,7 @@
     )
     (pin "1" (uuid 7d2faef3-35f0-47eb-90bd-d97ca9ba7b0c))
     (instances
-      (project "Vbus_Switch_BFF_2"
+      (project "Vbus_Switch_BFF_4"
         (path "/945c81bf-60e7-4b6d-b0a9-e2eb14405e35"
           (reference "#PWR04") (unit 1)
         )

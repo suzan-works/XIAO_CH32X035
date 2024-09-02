@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "WCH-LinkE_adapter")
-    (date "2024-06-25")
-    (rev "v1.0")
+    (title "SWD Converter Board")
+    (date "2024-09-02")
+    (rev "v2.0")
     (company "@suzan_works")
   )
 
@@ -455,7 +455,7 @@
     (pin "8" (uuid c4ed19c0-f126-49c6-8faa-3c3427065221))
     (pin "9" (uuid 0d13d9f6-11c6-49f2-9560-3c5ea4f30ca3))
     (instances
-      (project "WCHLinkE_Converter_2"
+      (project "WCHLinkE_Converter_5"
         (path "/575a9c30-2b78-4eea-a8f3-c2ee267e357b"
           (reference "J2") (unit 1)
         )
@@ -482,7 +482,7 @@
     (pin "2" (uuid 19584019-c3fb-4099-8afe-7afe73b6c79d))
     (pin "3" (uuid 49ef5931-c394-40be-900f-92c1f1932887))
     (instances
-      (project "WCHLinkE_Converter_2"
+      (project "WCHLinkE_Converter_5"
         (path "/575a9c30-2b78-4eea-a8f3-c2ee267e357b"
           (reference "SW1") (unit 1)
         )
@@ -516,7 +516,7 @@
     (pin "8" (uuid 196403bc-73b0-4cee-9887-6b79258fd866))
     (pin "9" (uuid 919d53d2-77cf-4c6b-bd97-80a466464516))
     (instances
-      (project "WCHLinkE_Converter_2"
+      (project "WCHLinkE_Converter_5"
         (path "/575a9c30-2b78-4eea-a8f3-c2ee267e357b"
           (reference "J1") (unit 1)
         )
@@ -545,7 +545,7 @@
     (pin "4" (uuid 0f0dee0c-861e-4269-8fcf-961ee0461450))
     (pin "5" (uuid 536f566a-68de-4d30-9f25-992e941f4481))
     (instances
-      (project "WCHLinkE_Converter_2"
+      (project "WCHLinkE_Converter_5"
         (path "/575a9c30-2b78-4eea-a8f3-c2ee267e357b"
           (reference "J3") (unit 1)
         )
@@ -574,7 +574,7 @@
     (pin "4" (uuid 9b6bd830-72ac-4600-b91f-85256b95114a))
     (pin "5" (uuid c7545715-c8e9-4152-8002-2aeccda68bff))
     (instances
-      (project "WCHLinkE_Converter_2"
+      (project "WCHLinkE_Converter_5"
         (path "/575a9c30-2b78-4eea-a8f3-c2ee267e357b"
           (reference "J4") (unit 1)
         )
