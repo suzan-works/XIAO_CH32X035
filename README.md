@@ -9,16 +9,21 @@ It can be programmed from the Arduino IDE and functions as a USB PD sink.
 WCH CH32X035搭載のUSB PD対応マイコンボードです。  
 ![1-1](./images/1-1_mcu-board.jpg)  
 ![1-2](./images/1-2_mcu-board.jpg)  
+![1-2-2](./images/1-2-2_mcu-board.jpg)  
+![1-2-3](./images/1-2-3_mcu-board.jpg)  
 ![1-3](./images/1-3_mcu-board.jpg)  
 ![1-4](./images/1-4_muc-board.jpg)  
+![1-4-2](./images/1-4-2_muc-board.jpg)  
 
 ## SWD変換基板 SWD Converter Board
-デバッガWCH-LinkEとマイコンボード上のコネクタ(1.27mm 10P)を接続するための変換基板です。
+デバッガWCH-LinkEとマイコンボード上のコネクタ(1.27mm 10P)を接続するための変換基板です。  
+![3-1](./images/3-1_converter-board.jpg)  
 
 ## VBUSスイッチアドオンボード VBUS Switch Add-on Board
 マイコンボードからVBUS出力のオンオフを切り替えられるアドオンボードです。
 ![2-1](./images/2-1_addon-board.jpg)  
 ![2-2](./images/2-2_addon-board.jpg)  
+![2-2-2](./images/2-2-2_addon-board.jpg)  
 ![2-3](./images/2-3_addon-board.jpg)  
 
 ## 導入手順
